@@ -1,0 +1,8 @@
+.cache/**
+Makefile
+**/__pycache__
+**.log
+.pytest_cache/**
+.coverage
+cov_html/**
+mytrainer/userdata/**
