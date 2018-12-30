@@ -1,0 +1,35 @@
+#Here is the token for bot mytestbot @wildeggBot:
+#in Telegram 18. Nov. 2017
+
+telegram_url:
+    'https://api.telegram.org/bot{}/'
+bots:
+    MyTesla:
+        first_name: 'MyTesla'
+        token: '436572244:AAETO-Pjwd94lO4z4O5f4iuWX0WQztPlkhM'
+    mytestbot:
+        first_name: 'mytestbot'
+        token: '475071327:AAE0ZVh-zGTp-33VyO5U8JdKGPSk436etRA'
+#    MyTeslaAdmin:
+#        first_name: 'MyTeslaAdmin'
+#        token: '541712543:AAEwE8D3KVlgYm7K7pdyGyd8E8pdsl3RnaY'
+#    falsebot:
+#        first_name: 'falsename'
+#        token: '123'
+
+
+get_method_maxtrials: 4
+get_method_sleeptime: 1
+get_method_readtimeout: 3.1
+
+wait_between_msgs_looping: 0.1
+wait_out_msgs_not_sent: 10
+
+
+# config data for AgetAddress
+ga_userdata: '.'
+ga_address_filename: address.dict
+ga_apiurl:
+    'https://maps.googleapis.com/maps/api/geocode/json?latlng={lat},{lon}&key='
+ga_apikey:
+    'AIzaSyAxoi8Lb4FJzqZTSqnPPRbqzdAL4wEzD1U'
