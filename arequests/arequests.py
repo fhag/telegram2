@@ -133,6 +133,7 @@ class Arequests():
                                             **kwargs, raise_for_status=True
                                             ) as response:
                 text = await response.text()
+                logger.error(text)
                 if json:
                     try:
                         text = await response.json(content_type=None)
@@ -143,8 +144,6 @@ class Arequests():
                         ftext = f'Unknown exception with JSON: {err}'
                         logger.error(ftext, exc_info=True)
                         text = ftext
-                if text['result']:
-                    logger.debug(f'normal return with {text!r}')
                 return text
         except aiohttp.ClientError as err:
             logger.error(f' {url}: {err}', exc_info=False)

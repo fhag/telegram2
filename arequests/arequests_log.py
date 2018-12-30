@@ -7,7 +7,7 @@ Created on Tue Nov 13 08:34:14 2018
 """
 import logging
 
-__version__ = '0.0.2'
+__version__ = '0.0.1'
 
 
 logger = logging.Logger('arequests')
@@ -20,4 +20,3 @@ formatter = logging.Formatter(
     "%d%b%y %H:%M.%S")
 handler.setFormatter(formatter)
 logger.addHandler(handler)
-logger.info(f'arequest version {__version__} started')
